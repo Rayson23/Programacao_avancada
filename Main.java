@@ -1,23 +1,24 @@
 /******************************************************************************
-30/03 - Testar pilha para converter em Binario
+
 
 *******************************************************************************/
 public class Main
 {
 	public static void main(String[] args) {
-	
-	TADPilha p = new TADPilha(100);
-	int n=10,resto;
-	while(n!=0){
-	    resto= n%2;
-	    p.empilha(resto);
-	    n=n/2;
+	   mensagem();
+	   mensagem("que legal");
+	   mensagem("cada enxadada uma minhoca");
+	   mensagem("cada enxadada uma minhoca ","cada enxadada uma minhoca");
 	}
-	System.out.println("Mostra ao Contrario");
-	p.mostraAoContrario();
-	System.out.println("Mostra normal");
-	p.mostra();
-	System.out.println("a pilha p tem " + p.conta() + " elementos");
+	public static void mensagem(){
+	    	System.out.println("Hello World");
 	}
-
+	public static void mensagem(String m){
+	    	System.out.println(m);
+	    
+	}
+		public static void mensagem(String m, String n){
+	    	System.out.println(m+n);
+	    
+	}
 }
